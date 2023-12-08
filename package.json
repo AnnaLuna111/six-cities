@@ -1,5 +1,5 @@
 {
-  "name": "6 cities",
+  "name": "6-cities",
   "version": "13.0.0",
   "homepage": "https://annaluna111.github.io/six-cities",
   "type": "module",
@@ -9,8 +9,8 @@
     "lint:fix": "eslint src --ext ts, tsx --fix",
     "preview": "vite preview",
     "test": "vitest --passWithNoTests",
-    "predeploy": "rm -rf build && vite build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "tsc && vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.9.5",
