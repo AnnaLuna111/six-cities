@@ -1,7 +1,7 @@
 import { FormEvent, Fragment } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { useParams } from 'react-router-dom';
-import { isFulfilled, isPending, isRejected, isValidForm } from '../../helper';
+import { isPending, isRejected, isValidForm } from '../../helper';
 import { clearErrorAction, postReviewAction } from '../../store/api-actions';
 import { ErrorMessage, FormValidation, StarRatings } from '../../const';
 import { selectReview, selectReviewPostingStatus, selectReviewRating } from '../../store/review/review-selectors';
